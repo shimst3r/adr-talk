@@ -156,7 +156,7 @@ Mit diesen Kriterien gewappnet, bleibt noch eine Frage:
 
 ADRs sind **kurze Textdateien**,
 
-# die eine **einzelne** Architekturntscheidung dokumentieren.
+# die eine **einzelne** Architekturentscheidung dokumentieren.
 
 ---
 
@@ -213,14 +213,14 @@ Die erwarteten Konsequenzen, sobald die Entscheidung umgesetzt wurde.
 2. "angesichts"
 3. "haben wir entschieden"
 4. "und abgelehnt"
-5. "um zu erreichen"
+5. "um zu erreichen" / "um zu gewährleisten"
 6. "akzeptierend, dass"
 
 ---
 
 # Y-Statements (Beispiel)
 
-> Im **Kontext** eines Web-Shop-Services, **im Angesicht** notwendiger Datenkonsistenz, **haben wir entschieden**, dass wir das Database-Session-State-Pattern **und abgelehnt** dass wir das Client-Session-State-Pattern nutzen wollen, um Datenkonsistenz **zu erreichen**, **akzeptierend, dass** eine Session-Datenbank implementiert werden muss.
+> Im **Kontext** eines SAP on Cloud PoC, **angesichts** notwendiger Datenaktualität, **haben wir entschieden**, dass wir Google Cloud Composer **und abgelehnt** dass wir Apache Airflow nutzen wollen, um eine effiziente Data Pipeline **zu gewährleisten**, **akzeptierend, dass** wir damit weniger Kontrolle über das Endprodukt haben.
 
 ---
 
@@ -255,20 +255,19 @@ $ adr init doc/architecture/decisions
 Lege einen neuen ADR an:
 
 ```shell
-$ adr new "Implement in PHP as part of the monolith"
+$ adr new "Implementierung einer Data \
+           Pipeline mit Apache Airflow"
 ```
 
 ---
 
-Auch wenn eine getroffene Entscheidung **ersetzt wird**, sollte sie aus historischen Gesichtspunkten trotzdem behalten werden. 
+Auch wenn eine getroffene Entscheidung **ersetzt wird**, sollte sie wegen zukünftiger Entscheidungen trotzdem behalten werden. 
 
 ```shell
-$ adr new -s "$ID" "Implement as Go micro service"
+$ adr new -s "$ID" "Implementierung einer Data \
+                    Pipeline mit Google \
+                    Cloud Composer"
 ```
-
----
-
-# [fit] Eine "Definition of Done"
 
 ---
 
@@ -278,11 +277,9 @@ Jetzt wissen wir, wie eine Architekturentscheidung **nachhaltig getroffen** und 
 
 ---
 
-Wir brauchen eine **"Definition of Done"**!
-
 # Basierend auf [1] mache ich folgenden Vorschlag[^2]: 
 
-[^2]: Formuliert als Fragen, um Diskussion zu enablen. 🤓
+[^2]: Formuliert als Fragen, um die Diskussion zu enablen. 🤓
 
 ---
 
