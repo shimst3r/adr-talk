@@ -17,15 +17,16 @@ theme: Zurich, 2
 
 ---
 
-# Aber nichts ist dokumentiert!
+# Aber nichts ist dokumentiert! 😱
+
+---
+
+
+# [fit] Warum ist das ein Problem?
 
 ---
 
 ![inline](img/confused-white-persian-guardian.gif)
-
----
-
-# [fit] Warum ist das ein Problem?
 
 ---
 
@@ -59,7 +60,7 @@ Beide Ansätze haben (große) Nachteile.
 
 # "Waaas? Dokumentation?" 
 
-# "Wir arbeiten `$AGIL`!"
+# "Wir arbeiten `$AGIL`!" 🤨
 
 ---
 
@@ -170,18 +171,13 @@ Sie sollten drei Dinge umfassen:
 
 # Kontext
 
-* Technische,
-* betriebliche, 
-* soziale, oder
-* politische
-
-**Rahmenbedingungen mit direktem Einfluss** auf die Architekturentscheidung.
+Technische, betriebliche oder soziale Gegebenheiten mit **direktem Einfluss**.
 
 ---
 
 # Beschreibung
 
-Eine *knappe* Beschreiung der Entscheidung, mit Outline der notwendigen Schritte.
+Eine **knappe Beschreibung** der Entscheidung, mit Outline der notwendigen Schritte.
 
 ---
 
